@@ -3,7 +3,7 @@ description: >
   A generic, zoomable hierarchy tree widget for Flutter: 2-12 configurable
   levels, auto-sizing cards, theming, orientation, search, a controller,
   and access-scope locking.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/somi1990/hierarchy_tree
 repository: https://github.com/somi1990/hierarchy_tree
 

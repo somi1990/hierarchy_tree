@@ -1,5 +1,7 @@
 # hierarchy_tree
 
+[![pub package](https://img.shields.io/pub/v/hierarchy_tree.svg)](https://pub.dev/packages/hierarchy_tree)
+
 A generic, zoomable, pannable hierarchy tree widget for Flutter — for org
 charts, asset trees, category trees, file systems, or any other parent/child
 data.
@@ -230,19 +232,24 @@ const HierarchyAccessScope(selectedPath: ['Engineering', 'Platform'])
   its siblings first — useful for a top-level nav where only one section
   should ever be open.
 
-## Publishing checklist
+## Installing
 
-This package includes a `LICENSE`, `CHANGELOG.md`, and a `test/` suite
-already. Before running `dart pub publish`:
+This package is published on pub.dev:
 
-- [ ] Check [pub.dev](https://pub.dev/packages?q=hierarchy_tree) for a name
-      collision — package names are global and permanent
-- [ ] Replace `homepage`/`repository` placeholders in `pubspec.yaml` with
-      your real repo URL
-- [ ] Replace the placeholder name in `LICENSE`
-- [ ] `flutter pub get && flutter analyze && flutter test` — this repo
-      hasn't been run through a live Flutter SDK, so this is the first
-      real compile/test check it gets
+```yaml
+dependencies:
+  hierarchy_tree: ^0.1.1
+```
+
+## Releasing a new version
+
+This checklist is for cutting a future release, not the first publish
+(that's already done). Repeat these steps for every version bump:
+
+- [ ] Bump `version:` in `pubspec.yaml`
+- [ ] Add a new dated entry to the top of `CHANGELOG.md`
+- [ ] `flutter pub get && flutter analyze && flutter test`
 - [ ] `dart pub publish --dry-run` and address anything it flags
 - [ ] Optionally run `pana .` (`dart pub global activate pana` first) to
-      preview your pub.dev score locally before publishing
+      preview the pub.dev score impact of the change before publishing
+- [ ] `dart pub publish` — irreversible for that version number once done

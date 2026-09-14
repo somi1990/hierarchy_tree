@@ -471,7 +471,9 @@ class _HierarchyTreeViewState<T> extends State<HierarchyTreeView<T>> {
       if (childPositions.isEmpty) return;
 
       double sumCross = 0.0;
-      for (final c in childPositions) sumCross += crossOf(c.position);
+      for (final c in childPositions) {
+        sumCross += crossOf(c.position);
+      }
       final double averageCross = sumCross / childPositions.length;
 
       positions.add(NodePosition<T>(node: node, position: toOffset(main, averageCross), level: level));

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Fixed a `for`-loop lint (`curly_braces_in_flow_control_structures`) flagged by pub.dev's static analysis check — this was the only issue keeping "Pass static analysis" below full marks.
+- README: replaced the stale pre-publish checklist with a "Releasing a new version" checklist, added an "Installing" section with the `pubspec.yaml` snippet, and added the pub.dev version badge.
+
 ## 0.1.0
 
 Initial release.
